@@ -1,0 +1,56 @@
+\doxysection{Graph Class Reference}
+\hypertarget{class_graph}{}\label{class_graph}\index{Graph@{Graph}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_ab74e9935bb61e4b038af9d1d10791620}\label{class_graph_ab74e9935bb61e4b038af9d1d10791620} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} {\bfseries find\+Vertex} (const int \&code) const
+\item 
+\Hypertarget{class_graph_acbf357c61ced3d3c3a3cd519be925428}\label{class_graph_acbf357c61ced3d3c3a3cd519be925428} 
+bool {\bfseries add\+Vertex} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}vertex)
+\item 
+\Hypertarget{class_graph_a53529bd49f023b51a8d73665456ef0be}\label{class_graph_a53529bd49f023b51a8d73665456ef0be} 
+bool {\bfseries remove\+Vertex} (const int code)
+\item 
+\Hypertarget{class_graph_a7d5205e3fbfb1ea471ce37fd70ef1d1d}\label{class_graph_a7d5205e3fbfb1ea471ce37fd70ef1d1d} 
+bool {\bfseries add\+Edge} (const int \&source, const int \&dest, double capacity)
+\item 
+\Hypertarget{class_graph_a764e3181643efb34ff0209ca6e33275b}\label{class_graph_a764e3181643efb34ff0209ca6e33275b} 
+bool {\bfseries remove\+Edge} (const int \&source, const int \&dest)
+\item 
+\Hypertarget{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}\label{class_graph_abb5e0517e2979c54eebdafc2a9875e8f} 
+int {\bfseries get\+Num\+Vertex} () const
+\item 
+\Hypertarget{class_graph_a619ac583094079134074658e29463c0e}\label{class_graph_a619ac583094079134074658e29463c0e} 
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Vertex\+Set} () const
+\item 
+\Hypertarget{class_graph_a4c636eb91a3e8e51c4fdc02734bbed79}\label{class_graph_a4c636eb91a3e8e51c4fdc02734bbed79} 
+bool {\bfseries is\+DAG} () const
+\item 
+\Hypertarget{class_graph_a03ef8f6e2f6ecbecc6068a5a5dc1f7c7}\label{class_graph_a03ef8f6e2f6ecbecc6068a5a5dc1f7c7} 
+bool {\bfseries dfs\+Is\+DAG} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v) const
+\item 
+\Hypertarget{class_graph_aaa937d160c1c4f2f4d6367d702c031e5}\label{class_graph_aaa937d160c1c4f2f4d6367d702c031e5} 
+std\+::vector$<$ int $>$ {\bfseries topsort} () const
+\item 
+\Hypertarget{class_graph_a9c5405f304c5383866c05fc9b105c6ae}\label{class_graph_a9c5405f304c5383866c05fc9b105c6ae} 
+void {\bfseries set\+Distance\+Matrix} (const std\+::vector$<$ std\+::vector$<$ float $>$ $>$ \&dist\+Matrix)
+\item 
+\Hypertarget{class_graph_af6b0df9b84713000b43bcc488d6a0150}\label{class_graph_af6b0df9b84713000b43bcc488d6a0150} 
+float {\bfseries get\+Distance} (int from, int to) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6}\label{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6} 
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries vertex\+Set}
+\item 
+\Hypertarget{class_graph_ab6bb9470fa7d1c64ae6c7f8179e57508}\label{class_graph_ab6bb9470fa7d1c64ae6c7f8179e57508} 
+std\+::vector$<$ std\+::vector$<$ float $>$ $>$ {\bfseries distance\+Matrix}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/diogo/dev/\+DA2324\+\_\+\+PRJ2\+\_\+\+G85/Graph.\+h\item 
+C\+:/\+Users/diogo/dev/\+DA2324\+\_\+\+PRJ2\+\_\+\+G85/Graph.\+cpp\end{DoxyCompactItemize}

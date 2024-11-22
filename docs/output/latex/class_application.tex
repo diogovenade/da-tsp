@@ -1,0 +1,198 @@
+\doxysection{Application Class Reference}
+\hypertarget{class_application}{}\label{class_application}\index{Application@{Application}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_application_a8bd10af3d61669eb3507acde812aeb58}\label{class_application_a8bd10af3d61669eb3507acde812aeb58} 
+{\bfseries Application} (int i)
+\item 
+void \mbox{\hyperlink{class_application_ab0c59246a1d8ebdcad2e90b0f8ff04f1}{tsp\+Backtracking}} ()
+\begin{DoxyCompactList}\small\item\em Determines an optimal solution to the Travelling Salesman Problem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a328fa3aafcf669ef64b19b0867f18689}{tsp\+Triangular}} ()
+\begin{DoxyCompactList}\small\item\em Polynomial approximation algorithm that relies on the triangular inequality principle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_ae6d7f62cef1825295f2012008a9fe963}{tsp\+Nearest\+Neighbor}} ()
+\begin{DoxyCompactList}\small\item\em Implements the nearest neighbor heuristic to solve the Travelling Salesman Problem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a49cb77f46178b75187daa235a1d86f4f}{tsp\+Christofides}} ()
+\begin{DoxyCompactList}\small\item\em Uses Christofides\textquotesingle{} algorithm to solve the Travelling Salesman Problem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_aca89af62d3a26510836f805d00ce7cab}{tsp\+Real\+World}} (int source)
+\begin{DoxyCompactList}\small\item\em Uses a nearest neighbor approach to solve the Travelling Salesman Problem in real-\/world scenarios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_application_a9dd5f3b4e32963a69ed410037623f0df}{tsp\+Backtracking\+Aux}} (int curr\+Pos, int n, int count, float cost, float \&ans, std\+::vector$<$ int $>$ \&path)
+\begin{DoxyCompactList}\small\item\em Auxiliary function to backtracking algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_ad12d8561b2200eb51d2f7c275307a779}{prim\+MST}} ()
+\begin{DoxyCompactList}\small\item\em Prim\textquotesingle{}s algorithm to find Minimum Spanning Tree (MST) of graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a3818802badb48469bff5b57d56d9c13f}{preorder\+Traversal}} (int root, std\+::vector$<$ bool $>$ \&visited)
+\begin{DoxyCompactList}\small\item\em Performs a preorder traversal starting from a given root node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_application_ac117d3080e629b82644b0c742e4d3df3}{haversine\+Distance}} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v1, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v2)
+\begin{DoxyCompactList}\small\item\em Determines Haversine distance between two points. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_application_ac1dd65d6e2541e496031126b75e9c1cb}{blossom\+Algorithm}} (const std\+::vector$<$ int $>$ \&odd\+Vertices)
+\begin{DoxyCompactList}\small\item\em Implements the Blossom Algorithm to find perfect matching. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a04e3b1094459f877226540af1d8c3240}{find\+Eulerian\+Circuit}} (int u, std\+::vector$<$ int $>$ \&circuit)
+\begin{DoxyCompactList}\small\item\em Finds an Eulerian circuit in a graph. \end{DoxyCompactList}\item 
+\Hypertarget{class_application_a81197bfa5340cd8dc6f3c9504abaa6af}\label{class_application_a81197bfa5340cd8dc6f3c9504abaa6af} 
+void {\bfseries reset\+Graph} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_application_a7d0a74b8b696cfdc5e5002dbb5bf7bb9}\label{class_application_a7d0a74b8b696cfdc5e5002dbb5bf7bb9} 
+\mbox{\hyperlink{class_graph}{Graph}} {\bfseries graph}
+\item 
+\Hypertarget{class_application_a0b9bb735289947ada0feafc06da4b7af}\label{class_application_a0b9bb735289947ada0feafc06da4b7af} 
+std\+::vector$<$ std\+::vector$<$ float $>$ $>$ {\bfseries distance\+Matrix}
+\item 
+\Hypertarget{class_application_aa98d412757b190f78f41f247fc25aa94}\label{class_application_aa98d412757b190f78f41f247fc25aa94} 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ {\bfseries visited}
+\item 
+\Hypertarget{class_application_a69bc02c1de12e043494c6d54e7fb93af}\label{class_application_a69bc02c1de12e043494c6d54e7fb93af} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries mst}
+\item 
+\Hypertarget{class_application_a826e2500355f14483c0e102d12413938}\label{class_application_a826e2500355f14483c0e102d12413938} 
+std\+::vector$<$ int $>$ {\bfseries tsp\+Tour}
+\item 
+\Hypertarget{class_application_a2e31e2e7bfe1c0711602b0f943b0c232}\label{class_application_a2e31e2e7bfe1c0711602b0f943b0c232} 
+int {\bfseries graph\+Type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_application_ac1dd65d6e2541e496031126b75e9c1cb}\label{class_application_ac1dd65d6e2541e496031126b75e9c1cb} 
+\index{Application@{Application}!blossomAlgorithm@{blossomAlgorithm}}
+\index{blossomAlgorithm@{blossomAlgorithm}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{blossomAlgorithm()}{blossomAlgorithm()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ Application\+::blossom\+Algorithm (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{odd\+Vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Implements the Blossom Algorithm to find perfect matching. 
+
+It iteratively constructs augmenting paths by using a priority queue to find the shortest path from an unmatched vertex to any other vertex. The algorithm continues until all odd vertices are matched. The matching edges are then extracted and returned.
+
+{\bfseries{Complexity}}\+: O(\+E \texorpdfstring{$\ast$}{*} V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices and E the number of edges in the graph \Hypertarget{class_application_a04e3b1094459f877226540af1d8c3240}\label{class_application_a04e3b1094459f877226540af1d8c3240} 
+\index{Application@{Application}!findEulerianCircuit@{findEulerianCircuit}}
+\index{findEulerianCircuit@{findEulerianCircuit}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{findEulerianCircuit()}{findEulerianCircuit()}}
+{\footnotesize\ttfamily void Application\+::find\+Eulerian\+Circuit (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{std\+::vector$<$ int $>$ \&}]{circuit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Finds an Eulerian circuit in a graph. 
+
+It traverses each edge of the MST, marking it as visited to ensure that no edge is traversed twice. The function then adds the vertices to the circuit vector in a depth-\/first manner.
+
+{\bfseries{Complexity}}\+: O(\+E), where E is the number of edges in the graph \Hypertarget{class_application_ac117d3080e629b82644b0c742e4d3df3}\label{class_application_ac117d3080e629b82644b0c742e4d3df3} 
+\index{Application@{Application}!haversineDistance@{haversineDistance}}
+\index{haversineDistance@{haversineDistance}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{haversineDistance()}{haversineDistance()}}
+{\footnotesize\ttfamily double Application\+::haversine\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v1,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Determines Haversine distance between two points. 
+
+It makes use of the geographical coordinates of the two vertices and applies the formula to calculate the distance between the two.
+
+{\bfseries{Complexity}}\+: O(log(n)) \Hypertarget{class_application_a3818802badb48469bff5b57d56d9c13f}\label{class_application_a3818802badb48469bff5b57d56d9c13f} 
+\index{Application@{Application}!preorderTraversal@{preorderTraversal}}
+\index{preorderTraversal@{preorderTraversal}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{preorderTraversal()}{preorderTraversal()}}
+{\footnotesize\ttfamily void Application\+::preorder\+Traversal (\begin{DoxyParamCaption}\item[{int}]{root,  }\item[{std\+::vector$<$ bool $>$ \&}]{visited }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performs a preorder traversal starting from a given root node. 
+
+It recursively visits each node and adds it to the TSP tour if it hasn\textquotesingle{}t been visited before. The traversal ensures that every vertex in the MST is included in the tour.
+
+{\bfseries{Complexity}}\+: O(\+V), where V is the number of vertices in the graph \Hypertarget{class_application_ad12d8561b2200eb51d2f7c275307a779}\label{class_application_ad12d8561b2200eb51d2f7c275307a779} 
+\index{Application@{Application}!primMST@{primMST}}
+\index{primMST@{primMST}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{primMST()}{primMST()}}
+{\footnotesize\ttfamily void Application\+::prim\+MST (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prim\textquotesingle{}s algorithm to find Minimum Spanning Tree (MST) of graph. 
+
+Uses a priority queue to select the minimum weight edge at each step, ensuring each vertex is included in the MST. The function calculates the total weight of the MST and updates the MST structure.
+
+{\bfseries{Complexity}}\+: O(\+E \texorpdfstring{$\ast$}{*} log(\+V)), where V is the number of vertices and E the number of edges in the graph \Hypertarget{class_application_ab0c59246a1d8ebdcad2e90b0f8ff04f1}\label{class_application_ab0c59246a1d8ebdcad2e90b0f8ff04f1} 
+\index{Application@{Application}!tspBacktracking@{tspBacktracking}}
+\index{tspBacktracking@{tspBacktracking}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspBacktracking()}{tspBacktracking()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Backtracking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines an optimal solution to the Travelling Salesman Problem. 
+
+This function employs a brute-\/force approach by testing all possible hamiltonian cycles of the graph and displaying the minimum cost found. It keeps track of the current minimum cost and updates it as it finds lower costs. After testing a particular path, it backtracks and starts testing another path.
+
+{\bfseries{Complexity}}\+: O(V!), where V is the number of vertices in the graph \Hypertarget{class_application_a9dd5f3b4e32963a69ed410037623f0df}\label{class_application_a9dd5f3b4e32963a69ed410037623f0df} 
+\index{Application@{Application}!tspBacktrackingAux@{tspBacktrackingAux}}
+\index{tspBacktrackingAux@{tspBacktrackingAux}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspBacktrackingAux()}{tspBacktrackingAux()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Backtracking\+Aux (\begin{DoxyParamCaption}\item[{int}]{curr\+Pos,  }\item[{int}]{n,  }\item[{int}]{count,  }\item[{float}]{cost,  }\item[{float \&}]{ans,  }\item[{std\+::vector$<$ int $>$ \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Auxiliary function to backtracking algorithm. 
+
+It recursively explores all possible Hamiltonian cycles, updating the minimum cost and path whenever a lower-\/cost tour is found. The function backtracks by unmarking vertices and removing them from the path to explore alternative routes.
+
+{\bfseries{Complexity}}\+: O(V!), where V is the number of vertices in the graph \Hypertarget{class_application_a49cb77f46178b75187daa235a1d86f4f}\label{class_application_a49cb77f46178b75187daa235a1d86f4f} 
+\index{Application@{Application}!tspChristofides@{tspChristofides}}
+\index{tspChristofides@{tspChristofides}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspChristofides()}{tspChristofides()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Christofides (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Uses Christofides\textquotesingle{} algorithm to solve the Travelling Salesman Problem. 
+
+It constructs a Minimum Spanning Tree (MST), finds a minimum weight perfect matching for odd-\/degree vertices, and combines these to form an Eulerian circuit. The Eulerian circuit is then converted into a Hamiltonian circuit (TSP tour), and the total cost is calculated. If the graph lacks geographical coordinates, the function is not applicable.
+
+{\bfseries{Complexity}}\+: O(\+E \texorpdfstring{$\ast$}{*} V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices and E is the number of edges in the graph \Hypertarget{class_application_ae6d7f62cef1825295f2012008a9fe963}\label{class_application_ae6d7f62cef1825295f2012008a9fe963} 
+\index{Application@{Application}!tspNearestNeighbor@{tspNearestNeighbor}}
+\index{tspNearestNeighbor@{tspNearestNeighbor}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspNearestNeighbor()}{tspNearestNeighbor()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Nearest\+Neighbor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements the nearest neighbor heuristic to solve the Travelling Salesman Problem. 
+
+Starting from the first vertex, it iteratively selects the nearest unvisited vertex until all vertices are visited, then returns to the starting vertex to complete the tour. If the graph lacks geographical coordinates, the function is not applicable.
+
+{\bfseries{Complexity}}\+: O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices in the graph \Hypertarget{class_application_aca89af62d3a26510836f805d00ce7cab}\label{class_application_aca89af62d3a26510836f805d00ce7cab} 
+\index{Application@{Application}!tspRealWorld@{tspRealWorld}}
+\index{tspRealWorld@{tspRealWorld}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspRealWorld()}{tspRealWorld()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Real\+World (\begin{DoxyParamCaption}\item[{int}]{source }\end{DoxyParamCaption})}
+
+
+
+Uses a nearest neighbor approach to solve the Travelling Salesman Problem in real-\/world scenarios. 
+
+Starting from a given source vertex, it iteratively selects the nearest unvisited vertex until all vertices are visited, then returns to the source to complete the tour. The function calculates and displays the total distance of the tour.
+
+{\bfseries{Complexity}}\+: O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices in the graph \Hypertarget{class_application_a328fa3aafcf669ef64b19b0867f18689}\label{class_application_a328fa3aafcf669ef64b19b0867f18689} 
+\index{Application@{Application}!tspTriangular@{tspTriangular}}
+\index{tspTriangular@{tspTriangular}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{tspTriangular()}{tspTriangular()}}
+{\footnotesize\ttfamily void Application\+::tsp\+Triangular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Polynomial approximation algorithm that relies on the triangular inequality principle. 
+
+This function uses a polynomial-\/time triangular approximation to solve the Travelling Salesman Problem. It constructs a Minimum Spanning Tree (MST) using Prim\textquotesingle{}s algorithm, performs a preorder traversal of the MST to generate a TSP tour, and calculates the total cost. If the graph lacks geographical coordinates, the function is not applicable.
+
+{\bfseries{Complexity}}\+: O(V + E), where V is the number of vertices and E is the number of edges in the graph 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/diogo/dev/\+DA2324\+\_\+\+PRJ2\+\_\+\+G85/Application.\+h\item 
+C\+:/\+Users/diogo/dev/\+DA2324\+\_\+\+PRJ2\+\_\+\+G85/Application.\+cpp\end{DoxyCompactItemize}
